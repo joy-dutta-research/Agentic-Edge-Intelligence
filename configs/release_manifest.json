@@ -1,6 +1,6 @@
 {
   "algorithm": "SHA-256",
-  "created_utc": "2026-09-17T22:40:56.694922+00:00",
+  "created_utc": "2026-09-17T22:48:12.244032+00:00",
   "files": [
     {
       "bytes": 353,
@@ -498,9 +498,9 @@
       "sha256": "e49a599c4d545ef9712186ec9ea8cd6b3f0a51b769e07f54ddf44c6d85692e4d"
     },
     {
-      "bytes": 35821,
+      "bytes": 35148,
       "path": "LICENSES/GPL-3.0.txt",
-      "sha256": "81cbae84a29ce7e770bf2bc7b178e50bda0ce8de6067aba661b0bc7b05b562f8"
+      "sha256": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b"
     },
     {
       "bytes": 190,
@@ -578,9 +578,9 @@
       "sha256": "d8f2dbf19161d32cc02e9b9a6218efc9c68e62f9e05c4da4be50386d60df556d"
     },
     {
-      "bytes": 2713,
+      "bytes": 2855,
       "path": "scripts/build_release_manifest.py",
-      "sha256": "2e5423fa326a3944f173d38da27146e6eba60f9bb209969f698d5ff7b4fc5f7d"
+      "sha256": "4cf676170a1df15f0275cb2522497d78103270e45740b119ba0c591a96d59f25"
     },
     {
       "bytes": 1952,
@@ -693,9 +693,9 @@
       "sha256": "afaad9ec679371bbcaf63ecada00689a0b77a94c11cc74e83f4c732bd7e62b9a"
     },
     {
-      "bytes": 3680,
+      "bytes": 3769,
       "path": "scripts/verify_release.py",
-      "sha256": "40b34cafedcf8c8624918224b98c87ca832b71028742f866cc21a5e2530c9ed4"
+      "sha256": "0e529aaa28e7b9fa2c1b46825c2fdeda82a2377772a6ca42199f2ee9ca1ba457"
     },
     {
       "bytes": 3855,

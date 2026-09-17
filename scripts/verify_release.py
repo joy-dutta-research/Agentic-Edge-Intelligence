@@ -32,12 +32,14 @@ SECRET_PATTERNS = (
 )
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(block)
-    return digest.hexdigest()
+def canonical_bytes(path: Path) -> bytes:
+    data = path.read_bytes()
+    try:
+        data.decode("utf-8")
+    except UnicodeDecodeError:
+        return data
+    # Match the LF-normalized text stored by Git on every platform.
+    return data.replace(b"\r\n", b"\n")
 
 
 def repository_files() -> list[Path]:
@@ -89,9 +91,10 @@ def verify_manifest() -> tuple[int, list[str]]:
         if not path.is_file():
             problems.append(f"manifest file missing: {relative}")
             continue
-        if path.stat().st_size != int(entry["bytes"]):
+        data = canonical_bytes(path)
+        if len(data) != int(entry["bytes"]):
             problems.append(f"manifest size mismatch: {relative}")
-        if sha256(path) != entry["sha256"]:
+        if hashlib.sha256(data).hexdigest() != entry["sha256"]:
             problems.append(f"manifest hash mismatch: {relative}")
     return len(entries), problems
 

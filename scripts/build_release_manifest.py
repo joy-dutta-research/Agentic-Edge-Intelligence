@@ -47,12 +47,14 @@ EXCLUDED = {
 }
 
 
-def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(block)
-    return digest.hexdigest()
+def canonical_bytes(path: Path) -> bytes:
+    data = path.read_bytes()
+    try:
+        data.decode("utf-8")
+    except UnicodeDecodeError:
+        return data
+    # Git stores text as LF, even when a Windows working tree contains CRLF.
+    return data.replace(b"\r\n", b"\n")
 
 
 def public_files() -> list[Path]:
@@ -88,14 +90,16 @@ def public_files() -> list[Path]:
 
 
 def main() -> None:
-    files = [
-        {
-            "path": path.relative_to(ROOT).as_posix(),
-            "bytes": path.stat().st_size,
-            "sha256": sha256(path),
-        }
-        for path in public_files()
-    ]
+    files = []
+    for path in public_files():
+        data = canonical_bytes(path)
+        files.append(
+            {
+                "path": path.relative_to(ROOT).as_posix(),
+                "bytes": len(data),
+                "sha256": hashlib.sha256(data).hexdigest(),
+            }
+        )
     manifest = {
         "schema_version": 1,
         "created_utc": datetime.now(UTC).isoformat(),

@@ -1,6 +1,6 @@
 {
   "algorithm": "SHA-256",
-  "created_utc": "2026-09-04T22:46:26.634847+00:00",
+  "created_utc": "2026-09-17T22:40:56.694922+00:00",
   "files": [
     {
       "bytes": 353,
@@ -498,6 +498,11 @@
       "sha256": "e49a599c4d545ef9712186ec9ea8cd6b3f0a51b769e07f54ddf44c6d85692e4d"
     },
     {
+      "bytes": 35821,
+      "path": "LICENSES/GPL-3.0.txt",
+      "sha256": "81cbae84a29ce7e770bf2bc7b178e50bda0ce8de6067aba661b0bc7b05b562f8"
+    },
+    {
       "bytes": 190,
       "path": "network/mosquitto.conf",
       "sha256": "21054e404ee03085784ed4324aaf6c91d85b4abe8c9ad9985edc33048c083f4f"
@@ -508,9 +513,9 @@
       "sha256": "ebff148848125bba3265701ed7aa35406253bd0e7571b5f6e9f3e47933572eb4"
     },
     {
-      "bytes": 654,
+      "bytes": 857,
       "path": "patches/README.md",
-      "sha256": "55e4e024ddc33ba5b8d7dbdac1d3211a61c8f0031b9442f06ab88a6edc742df5"
+      "sha256": "9aacb615e67ac320b4a0d36cd2d8243d8c2de3bdbf9cf79f23dbc8829b8b933b"
     },
     {
       "bytes": 2734,
@@ -523,9 +528,9 @@
       "sha256": "da3894672e068b6ddb2ae5eeeffd3f1202cc69e4e0e81e8459d5f05a9526dc12"
     },
     {
-      "bytes": 10314,
+      "bytes": 10575,
       "path": "README.md",
-      "sha256": "de51db5563afc6778f8b57516c53278f8e4e8ecdc0190a75428ecc536dc0b13f"
+      "sha256": "226794067e7a19015eee879bceb377af8f41a1d7243b279a889bbd6abb7d303b"
     },
     {
       "bytes": 410,
@@ -548,9 +553,9 @@
       "sha256": "d249c4a247405b035bfc2e4b862dc9826f41f11c077620f6ebdcdcfa19bc870a"
     },
     {
-      "bytes": 1738,
+      "bytes": 1948,
       "path": "scenarios/README.md",
-      "sha256": "17c55db79cf05ca4a52d5af76e8055355da95e364dfa300b2b08fbc680da1977"
+      "sha256": "b017dd2edec3b6695bacc6a90d0be7b9ac910867cbd1bd2018e94c12a3ba9c7c"
     },
     {
       "bytes": 515,
@@ -573,9 +578,9 @@
       "sha256": "d8f2dbf19161d32cc02e9b9a6218efc9c68e62f9e05c4da4be50386d60df556d"
     },
     {
-      "bytes": 2667,
+      "bytes": 2713,
       "path": "scripts/build_release_manifest.py",
-      "sha256": "311e01b0428db18c3ff3684bffd8beedb4ae179b85df2537e94b3c9892de04a2"
+      "sha256": "2e5423fa326a3944f173d38da27146e6eba60f9bb209969f698d5ff7b4fc5f7d"
     },
     {
       "bytes": 1952,
@@ -851,6 +856,11 @@
       "bytes": 3577,
       "path": "tests/test_signals_metrics.py",
       "sha256": "51f51599ae496ec0bb7138fc2ee201497c13207247062974127e0b0572d91771"
+    },
+    {
+      "bytes": 1243,
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "11836a429305e1812f1dd28bbafca278b1eb5ae0bada0842062ef957349ddab2"
     }
   ],
   "schema_version": 1

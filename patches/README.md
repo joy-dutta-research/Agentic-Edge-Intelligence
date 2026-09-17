@@ -9,3 +9,7 @@ python scripts/fetch_resco.py
 ```
 
 The fetch script verifies the upstream URL and commit before applying the patch, and refuses an unexpected checkout. The RESCO source itself is not redistributed; its origin, exact commit, and license are documented in [`scenarios/README.md`](../scenarios/README.md).
+
+## Licence
+
+This patch modifies GPL-v3-licensed RESCO source files and is distributed under the GNU General Public License v3.0. The repository's MIT licence does not apply to this RESCO-derived patch.

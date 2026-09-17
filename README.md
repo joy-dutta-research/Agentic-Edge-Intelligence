@@ -1,7 +1,7 @@
 # Governed Agentic Edge Traffic Control
 
 [![CI](https://github.com/joy-dutta/Agentic-Edge-Intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/joy-dutta/Agentic-Edge-Intelligence/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT + GPLv3](https://img.shields.io/badge/license-MIT%20%2B%20GPLv3-blue.svg)](THIRD_PARTY_NOTICES.md)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](pyproject.toml)
 
 This repository contains a reproducible proof of concept for **bounded LLM-assisted control at the network edge**. The test case is urban traffic-signal control, where decisions are time-sensitive, neighboring intersections exchange compact context, and unsuitable actions can immediately affect a physical process.
@@ -94,7 +94,7 @@ docker compose -f docker/compose.yaml run --rm experiment python scripts/fetch_r
 docker compose -f docker/compose.yaml run --rm experiment python scripts/pilot.py --mode offline --phase pilot
 ```
 
-The RESCO source is downloaded at its pinned commit and patched locally. It is not redistributed because its upstream CC-BY-NC-SA-3.0 terms remain authoritative.
+The RESCO source is fetched at its pinned commit and patched locally. RESCO is licensed by its upstream authors under the GNU General Public License v3.0 (GPL-3.0). The upstream source is not committed to this repository. The study-specific patch modifies RESCO files and is distributed under the same GPL v3 terms.
 
 ## Native Python Setup
 
@@ -143,10 +143,10 @@ This is a controlled SUMO microsimulation, not a field deployment. It is intende
 
 ## Associated Publication
 
-This repository supports a manuscript that is currently under peer review. To preserve the confidentiality of the review process, the manuscript title and publication details are not included at this stage. After acceptance, this section will be updated with the complete citation, DOI, and official publication link.
+This repository supports a manuscript being prepared for journal submission. The complete citation, DOI, and official publication link will be added when available.
 
 Researchers who use this repository, its experimental methodology, released results, or the associated agentic edge intelligence framework are kindly requested to cite the published article once the final citation becomes available. Until then, the software and released result tables can be cited using the repository's [CITATION.cff](CITATION.cff) file.
 
 ## License and Citation
 
-Repository code is released under the [MIT License](LICENSE). RESCO scenarios retain their upstream license. To cite the software, use [`CITATION.cff`](CITATION.cff). Contributions are described in [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md), and private vulnerability reports are covered by [.github/SECURITY.md](.github/SECURITY.md).
+Original study code is released under the [MIT License](LICENSE). The RESCO-derived reproducibility patch is distributed under GNU GPL v3, while the fetched RESCO source and other third-party components retain their respective upstream licences. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the complete licence scope. To cite the software, use [`CITATION.cff`](CITATION.cff). Contributions are described in [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md), and private vulnerability reports are covered by [.github/SECURITY.md](.github/SECURITY.md).

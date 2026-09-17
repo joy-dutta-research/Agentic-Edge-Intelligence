@@ -2,7 +2,7 @@
 
 The experiment uses the public [RESCO traffic-signal benchmark](https://github.com/Pi-Star-Lab/RESCO) at commit `f1ed9a174f8de41fc9d8689373b836bc882570dc`. Cologne-8 supplies the eight-signal urban network for the confirmatory evaluation; Cologne-3 supplies the smaller three-signal corridor for the separate cross-network follow-up. The experiment keeps the benchmark road geometry, routes, demand, and signal programs rather than redrawing them.
 
-RESCO remains under its upstream CC-BY-NC-SA-3.0 license and is therefore fetched rather than copied into this MIT-licensed repository. From the repository root, run:
+RESCO remains under its upstream GNU General Public License v3.0. The upstream checkout is fetched rather than copied into this repository. The study-specific deterministic-seeding patch modifies RESCO files and is therefore provided under the same GPL v3 terms. Original study code outside this patch remains under the repository's MIT licence. From the repository root, run:
 
 ```bash
 python scripts/fetch_resco.py

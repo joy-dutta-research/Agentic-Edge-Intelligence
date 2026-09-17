@@ -18,6 +18,7 @@ PUBLIC_ROOTS = (
     "data",
     "docs",
     "docker",
+    "LICENSES",
     "network",
     "patches",
     "requirements",
@@ -35,6 +36,7 @@ TOP_LEVEL = (
     "CITATION.cff",
     "LICENSE",
     "README.md",
+    "THIRD_PARTY_NOTICES.md",
     "pyproject.toml",
 )
 

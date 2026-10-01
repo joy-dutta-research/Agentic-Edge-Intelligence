@@ -1,6 +1,6 @@
 {
   "algorithm": "SHA-256",
-  "created_utc": "2026-10-01T09:18:45.213500+00:00",
+  "created_utc": "2026-10-01T09:19:27.922402+00:00",
   "files": [
     {
       "bytes": 353,
@@ -268,9 +268,9 @@
       "sha256": "f2c15ea8d3200de1a5595b2096c6ed26f9450bf42228b593db670468aed6c3b8"
     },
     {
-      "bytes": 547,
+      "bytes": 649,
       "path": "CITATION.cff",
-      "sha256": "8552f8ae3037ac04cea0740adcefbbfb2db0ffbda43f1627ce567d496bb62ae6"
+      "sha256": "b05768c71e4f1ea88f5a6c2d85c7902c4bf1f5addaabf3634b7be9665e44282b"
     },
     {
       "bytes": 1165,
@@ -523,9 +523,9 @@
       "sha256": "95b8c9e302525f2b2842a7c42413d6a65dce3830d9a654a5760fdf3ce11f0efc"
     },
     {
-      "bytes": 1188,
+      "bytes": 1254,
       "path": "pyproject.toml",
-      "sha256": "da3894672e068b6ddb2ae5eeeffd3f1202cc69e4e0e81e8459d5f05a9526dc12"
+      "sha256": "f3a0c8398d1b5bfb9cd6f288ffc9b238ec722dac7196dbe669e31b6f82630221"
     },
     {
       "bytes": 11326,

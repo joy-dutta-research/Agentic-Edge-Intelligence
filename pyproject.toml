@@ -9,7 +9,11 @@ description = "Reproducible SUMO/RESCO evaluation of governed LLM-assisted edge 
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 license = {text = "MIT"}
-authors = [{name = "Joy Dutta"}]
+authors = [
+  {name = "Joy Dutta"},
+  {name = "Hossien B. Eldeeb"},
+  {name = "Ali Al-Sherbaz"},
+]
 dependencies = [
   "eclipse-sumo==1.27.1",
   "traci==1.27.1",

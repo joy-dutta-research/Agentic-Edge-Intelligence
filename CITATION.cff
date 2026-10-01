@@ -5,6 +5,10 @@ type: software
 authors:
   - family-names: Dutta
     given-names: Joy
+  - family-names: Eldeeb
+    given-names: Hossien B.
+  - family-names: Al-Sherbaz
+    given-names: Ali
 repository-code: "https://github.com/joy-dutta/Agentic-Edge-Intelligence"
 license: MIT
 version: 1.0.0
@@ -17,4 +21,3 @@ keywords:
   - SUMO
   - RESCO
   - reproducibility
-

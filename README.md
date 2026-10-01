@@ -145,17 +145,15 @@ This is a controlled SUMO microsimulation, not a field deployment. It is intende
 
 This repository supports a manuscript being prepared for journal submission. The complete citation, DOI, and official publication link will be added when available.
 
-Researchers who use this repository, its experimental methodology, released results, or the associated agentic edge intelligence framework are kindly requested to cite the published article once the final citation becomes available. Until then, the software and released result tables can be cited using the repository's [CITATION.cff](CITATION.cff) file.
-
-## Authors and repository maintenance
-
-Repository maintained by **Joy Dutta**.
-
 **Paper title:** Agentic Edge Intelligence: A Networking-Centric Blueprint for Trustworthy Edge Agents
 
 **Authors of the accompanying paper**, in manuscript order:
 
 Joy Dutta, Hossien B. Eldeeb, Ali Al-Sherbaz
+
+Repository maintained by **Joy Dutta**.
+
+Researchers who use this repository, its experimental methodology, released results, or the associated agentic edge intelligence framework are kindly requested to cite the published article once the final citation becomes available. Until then, the software and released result tables can be cited using the repository's [CITATION.cff](CITATION.cff) file.
 
 ## License and Citation
 

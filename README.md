@@ -1,12 +1,20 @@
-# Governed Agentic Edge Traffic Control
+# Agentic Edge Intelligence
+
+**A networking-centric blueprint demonstrated through governed urban traffic control**
 
 [![CI](https://github.com/joy-dutta/Agentic-Edge-Intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/joy-dutta/Agentic-Edge-Intelligence/actions/workflows/ci.yml)
 [![License: multiple; see notices](https://img.shields.io/badge/license-MIT%20%2B%20GPLv3%20%2B%20CC--BY--NC--SA--3.0-blue.svg)](THIRD_PARTY_NOTICES.md)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](pyproject.toml)
 
-This repository contains a reproducible proof of concept for **bounded LLM-assisted control at the network edge**. The test case is urban traffic-signal control, where decisions are time-sensitive, neighboring intersections exchange compact context, and unsuitable actions can immediately affect a physical process.
+## The real-world question
 
-The central design principle is simple: the LLM assists a dependable local controller; it does not replace it. The local loop continues to operate every five simulated seconds. The LLM periodically proposes a small, structured supervisory intent. A deterministic policy shield checks that intent before execution, and invalid, unsafe, stale, late, or unavailable responses automatically fall back to local control.
+Imagine a busy urban corridor during the morning rush. A lane suddenly closes while an emergency vehicle is approaching. Each traffic signal must continue making safe, time-sensitive decisions, even when sensors are incomplete, communication is delayed, or a remote AI service is unavailable.
+
+In this proof of concept, every intersection keeps a dependable local controller. An edge agent can ask a remote LLM for a limited supervisory suggestion, such as prioritizing the affected corridor or coordinating with a neighboring intersection. The LLM cannot directly control the traffic lights. Every suggestion is checked by a deterministic policy shield before it can influence the local controller.
+
+If the suggestion violates a rule, relies on stale or untrusted information, arrives too late, or the model is unavailable, it is rejected and local control continues. This is the central idea tested by the repository: **agentic intelligence should assist dependable edge control, not replace it.**
+
+The evaluation uses SUMO and the RESCO Cologne traffic networks. It contains **520 confirmatory runs** and a separate **80-run exploratory follow-up**. These are controlled simulations, not a field deployment.
 
 ## What This Experiment Tests
 

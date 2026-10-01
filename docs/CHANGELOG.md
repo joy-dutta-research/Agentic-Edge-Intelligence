@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Corrected the RESCO licence notices to distinguish GPL-3.0 software and the GPL-3.0 reproducibility patch from the CC-BY-NC-SA-3.0 Cologne-3 and Cologne-8 scenario/data assets.
 - Grouped Docker definitions, dependency locks, repository policies, and release notes into clear folders while retaining conventional root files.
 - Added a goal-based repository map and a plain-language README in every main working folder.
 - Replaced ambiguous empty placeholders with documented locations for raw runs, logs, packet captures, and processed evidence.

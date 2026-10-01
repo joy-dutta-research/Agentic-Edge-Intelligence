@@ -1,7 +1,7 @@
 # Governed Agentic Edge Traffic Control
 
 [![CI](https://github.com/joy-dutta/Agentic-Edge-Intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/joy-dutta/Agentic-Edge-Intelligence/actions/workflows/ci.yml)
-[![License: MIT + GPLv3](https://img.shields.io/badge/license-MIT%20%2B%20GPLv3-blue.svg)](THIRD_PARTY_NOTICES.md)
+[![License: multiple; see notices](https://img.shields.io/badge/license-MIT%20%2B%20GPLv3%20%2B%20CC--BY--NC--SA--3.0-blue.svg)](THIRD_PARTY_NOTICES.md)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](pyproject.toml)
 
 This repository contains a reproducible proof of concept for **bounded LLM-assisted control at the network edge**. The test case is urban traffic-signal control, where decisions are time-sensitive, neighboring intersections exchange compact context, and unsuitable actions can immediately affect a physical process.
@@ -94,7 +94,7 @@ docker compose -f docker/compose.yaml run --rm experiment python scripts/fetch_r
 docker compose -f docker/compose.yaml run --rm experiment python scripts/pilot.py --mode offline --phase pilot
 ```
 
-The RESCO source is fetched at its pinned commit and patched locally. RESCO is licensed by its upstream authors under the GNU General Public License v3.0 (GPL-3.0). The upstream source is not committed to this repository. The study-specific patch modifies RESCO files and is distributed under the same GPL v3 terms.
+The RESCO source is fetched at its pinned commit and patched locally. Its software is licensed by its upstream authors under the GNU General Public License v3.0 (GPL-3.0), and the study-specific patch modifies RESCO source files and is distributed under the same GPL v3 terms. The fetched Cologne-3 and Cologne-8 road-network, demand, signal-program, and related scenario/data files retain their own CC-BY-NC-SA-3.0 licences; they are not relicensed by RESCO's GPL-3.0 software licence. The upstream source and scenario assets are not committed to this repository. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) and [scenario provenance](scenarios/README.md) for the pinned sources and scope.
 
 ## Native Python Setup
 
@@ -149,4 +149,4 @@ Researchers who use this repository, its experimental methodology, released resu
 
 ## License and Citation
 
-Original study code is released under the [MIT License](LICENSE). The RESCO-derived reproducibility patch is distributed under GNU GPL v3, while the fetched RESCO source and other third-party components retain their respective upstream licences. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the complete licence scope. To cite the software, use [`CITATION.cff`](CITATION.cff). Contributions are described in [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md), and private vulnerability reports are covered by [.github/SECURITY.md](.github/SECURITY.md).
+Original study code is released under the [MIT License](LICENSE). The RESCO-derived reproducibility patch is distributed under GNU GPL v3; the fetched Cologne-3 and Cologne-8 scenario/data assets retain their individual CC-BY-NC-SA-3.0 licences; and other third-party components retain their respective upstream licences. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the complete licence scope. To cite the software, use [`CITATION.cff`](CITATION.cff). Contributions are described in [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md), and private vulnerability reports are covered by [.github/SECURITY.md](.github/SECURITY.md).

@@ -1,6 +1,6 @@
 {
   "algorithm": "SHA-256",
-  "created_utc": "2026-09-17T22:48:12.244032+00:00",
+  "created_utc": "2026-10-01T08:35:11.916031+00:00",
   "files": [
     {
       "bytes": 353,
@@ -433,9 +433,9 @@
       "sha256": "1b5ce61d2aed9d05e08fe9ca3f9a25a4952ca9d6362ee405fedc99951b254f91"
     },
     {
-      "bytes": 1179,
+      "bytes": 1358,
       "path": "docs/CHANGELOG.md",
-      "sha256": "ee36ee4bc74b3c8acdc4a390a8f3ec7d25e4af1998dcc2930490439ce8541919"
+      "sha256": "274dae09ccf3a0d17a6bd80b96c77747aecb051dc2d8a322d051e9b49ba73f42"
     },
     {
       "bytes": 3656,
@@ -528,9 +528,9 @@
       "sha256": "da3894672e068b6ddb2ae5eeeffd3f1202cc69e4e0e81e8459d5f05a9526dc12"
     },
     {
-      "bytes": 10575,
+      "bytes": 11074,
       "path": "README.md",
-      "sha256": "226794067e7a19015eee879bceb377af8f41a1d7243b279a889bbd6abb7d303b"
+      "sha256": "e83ec28f9f1bd46ef844f1879447001f6def3eed3486cdfecddd24a454e7c654"
     },
     {
       "bytes": 410,
@@ -553,9 +553,9 @@
       "sha256": "d249c4a247405b035bfc2e4b862dc9826f41f11c077620f6ebdcdcfa19bc870a"
     },
     {
-      "bytes": 1948,
+      "bytes": 3256,
       "path": "scenarios/README.md",
-      "sha256": "b017dd2edec3b6695bacc6a90d0be7b9ac910867cbd1bd2018e94c12a3ba9c7c"
+      "sha256": "3d3cf305d729e25762edf240ad34e9e9b464405211dece5d8391d73c6c63c2fe"
     },
     {
       "bytes": 515,
@@ -858,9 +858,9 @@
       "sha256": "51f51599ae496ec0bb7138fc2ee201497c13207247062974127e0b0572d91771"
     },
     {
-      "bytes": 1243,
+      "bytes": 2487,
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "11836a429305e1812f1dd28bbafca278b1eb5ae0bada0842062ef957349ddab2"
+      "sha256": "7a3910c36156d6b14016d9abcd0435eeb65e8701c101ce2509bcfb505c601d20"
     }
   ],
   "schema_version": 1

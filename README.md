@@ -147,6 +147,16 @@ This repository supports a manuscript being prepared for journal submission. The
 
 Researchers who use this repository, its experimental methodology, released results, or the associated agentic edge intelligence framework are kindly requested to cite the published article once the final citation becomes available. Until then, the software and released result tables can be cited using the repository's [CITATION.cff](CITATION.cff) file.
 
+## Authors and repository maintenance
+
+Repository maintained by **Joy Dutta**.
+
+**Paper title:** Agentic Edge Intelligence: A Networking-Centric Blueprint for Trustworthy Edge Agents
+
+**Authors of the accompanying paper**, in manuscript order:
+
+Joy Dutta, Hossien B. Eldeeb, Ali Al-Sherbaz
+
 ## License and Citation
 
 Original study code is released under the [MIT License](LICENSE). The RESCO-derived reproducibility patch is distributed under GNU GPL v3; the fetched Cologne-3 and Cologne-8 scenario/data assets retain their individual CC-BY-NC-SA-3.0 licences; and other third-party components retain their respective upstream licences. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the complete licence scope. To cite the software, use [`CITATION.cff`](CITATION.cff). Contributions are described in [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md), and private vulnerability reports are covered by [.github/SECURITY.md](.github/SECURITY.md).

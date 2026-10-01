@@ -6,7 +6,7 @@
 [![License: multiple; see notices](https://img.shields.io/badge/license-MIT%20%2B%20GPLv3%20%2B%20CC--BY--NC--SA--3.0-blue.svg)](THIRD_PARTY_NOTICES.md)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](pyproject.toml)
 
-## The real-world question
+## Practical Motivation
 
 Imagine a busy urban corridor during the morning rush. A lane suddenly closes while an emergency vehicle is approaching. Each traffic signal must continue making safe, time-sensitive decisions, even when sensors are incomplete, communication is delayed, or a remote AI service is unavailable.
 
@@ -15,6 +15,10 @@ In this proof of concept, every intersection keeps a dependable local controller
 If the suggestion violates a rule, relies on stale or untrusted information, arrives too late, or the model is unavailable, it is rejected and local control continues. This is the central idea tested by the repository: **agentic intelligence should assist dependable edge control, not replace it.**
 
 The evaluation uses SUMO and the RESCO Cologne traffic networks. It contains **520 confirmatory runs** and a separate **80-run exploratory follow-up**. These are controlled simulations, not a field deployment.
+
+## Role of This Repository
+
+This repository is the reproducibility package for the traffic-control proof of concept accompanying the paper. It provides the frozen configurations, implementation, tests, processed run-level data, result tables, controller checkpoints, third-party notices, and instructions needed to inspect the evidence, verify the released results, or reproduce the experiments. The manuscript and publication figures are intentionally not included.
 
 ## What This Experiment Tests
 
